@@ -21,8 +21,10 @@
 							            <td>{{ obj['FECHA'] }}</td>
 							            <td>{{ obj['MUERTOS'] }}</td>
 							            <td>{{ obj['HERIDOS'] }}</td>
-							            <td>{{ obj['COMUNIDAD'].decode('UTF-8') }}</td>
-							            <td>{{ obj['PROVINCIA'].decode('UTF-8') }}</td>
+							            <td>
+										<a href="{{ obj['IDPIF'] }}/">{{ obj['COMUNIDAD'].decode('UTF-8') }}</a>
+							            </td>
+										<td>{{ obj['PROVINCIA'].decode('UTF-8') }}</td>
 							            <td>{{ obj['COMARCA'].decode('UTF-8') }}</td>
 							            <td>{{ obj['CAUSA'].decode('UTF-8')  }}</td>
 							            <td>{{ obj['PERDIDAS'] }}</td>
